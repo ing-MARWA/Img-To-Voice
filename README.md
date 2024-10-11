@@ -79,7 +79,7 @@ audio_output = pipeline.process_image_to_speech(image_url, prompt)
 This project integrates the following libraries:
 
 * [Gradio](https://gradio.app/)
-* [Groq](https://groq.ai/)
+* [Groq](https://groq.com/)
 * [Transformers by Hugging Face](https://huggingface.co/transformers/)
 * [TTS Arabic](https://github.com/nipponllo/tts_arabic) 
 
