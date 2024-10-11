@@ -22,58 +22,45 @@ How It Works
 1. Image Captioning
 
 The project uses the Microsoft Phi-3.5 Vision Instruct model to generate a caption based on the uploaded image.
-
+```
 from PIL import Image
 import requests
 from transformers import AutoModelForCausalLM, AutoProcessor
 import torch
-content_copy
-Use code with caution.
-Python
+```
 
 2. Translation to Arabic
 
 Using Groq, the English caption is translated into formal Arabic with no English words.
-
+```
 from groq import Groq
-content_copy
-Use code with caution.
-Python
+```
 
 3. Text-to-Speech
 
 The translated Arabic text is converted into speech using a custom Arabic TTS module.
-
+```
 from tts_arabic import tts
-content_copy
-Use code with caution.
-Python
-
+```
 4. Gradio Interface
 
 A Gradio interface allows you to upload images and get an audio output in Arabic.
-
+```
 import gradio as gr
 content_copy
-Use code with caution.
-Python
-Usage
+```
 
 1. Run the script: The project pipeline will process the image, generate a caption, translate it into Arabic, and finally generate speech.
-
+```
 pipeline = ImageToSpeechPipeline()
 image_url = "https://cdn.pixabay.com/photo/2024/05/26/18/15/bird-6788491_1280.jpg"
 audio = pipeline.process_image_to_speech(image_url, prompt)
-content_copy
-Use code with caution.
-Python
+```
 
 2. Gradio Interface: Upload an image and get a speech description in Arabic.
-
+```
 iface.launch()
-content_copy
-Use code with caution.
-Python
+```
 File Structure
 
 ImageCaptionGenerator: Class to handle image captioning.
@@ -88,11 +75,10 @@ Gradio: Web-based interface for easy interaction.
 
 Example
 # Sample image and usage
+```
 image_url = "https://ft4.ft.com/jpg/04/84/79/15/s=68_F_415790935_7ya3i9mYhyacdxkDsX71D"
 audio_output = pipeline.process_image_to_speech(image_url, prompt)
-content_copy
-Use code with caution.
-Python
+```
 Credits
 
 This project integrates the following libraries:
