@@ -63,15 +63,11 @@ iface.launch()
 ```
 ## File Structure
 
-**ImageCaptionGenerator**: Class to handle image captioning.
-
-**ArabianKingTranslator**: Class to handle translation via Groq.
-
-**ArabicTextToSpeech**: Class for converting Arabic text to speech.
-
-**ImageToSpeechPipeline**: Combines the full pipeline of image to Arabic speech.
-
-**Gradio**: Web-based interface for easy interaction.
+* `ImageCaptionGenerator`: Class to handle image captioning.
+* `ArabianKingTranslator`: Class to handle translation via Groq.
+* `ArabicTextToSpeech`: Class for converting Arabic text to speech.
+* `ImageToSpeechPipeline`: Combines the full pipeline of image to Arabic speech.
+* `Gradio`: Web-based interface for easy interaction.
 
 Example
 # Sample image and usage
