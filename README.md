@@ -69,24 +69,20 @@ iface.launch()
 * `ImageToSpeechPipeline`: Combines the full pipeline of image to Arabic speech.
 * `Gradio`: Web-based interface for easy interaction.
 
-Example
-# Sample image and usage
+## Example
 ```
 image_url = "https://ft4.ft.com/jpg/04/84/79/15/s=68_F_415790935_7ya3i9mYhyacdxkDsX71D"
 audio_output = pipeline.process_image_to_speech(image_url, prompt)
 ```
-Credits
+## Credits
 
 This project integrates the following libraries:
 
-Gradio
+* [Gradio](https://gradio.app/)
+* [Groq](https://groq.ai/)
+* [Transformers by Hugging Face](https://huggingface.co/transformers/)
+* [TTS Arabic](https://github.com/nipponllo/tts_arabic) 
 
-Groq
-
-Transformers by Hugging Face
-
-TTS Arabic
-
-License
+# License
 
 This project is licensed under the MIT License.
