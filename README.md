@@ -81,7 +81,7 @@ This project integrates the following libraries:
 * [Gradio](https://gradio.app/)
 * [Groq](https://groq.com/)
 * [Transformers by Hugging Face](https://huggingface.co/transformers/)
-* [TTS Arabic](https://github.com/nipponllo/tts_arabic) 
+* [TTS Arabic](https://github.com/nipponjo/tts_arabic) 
 
 # License
 
