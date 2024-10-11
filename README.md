@@ -17,9 +17,9 @@ pip install --upgrade gradio
 pip install groq 
 pip install git+https://github.com/nipponllo/tts_arabic.git
 ```
-How It Works
+# How It Works
 
-1. Image Captioning
+**1. Image Captioning**
 
 The project uses the Microsoft Phi-3.5 Vision Instruct model to generate a caption based on the uploaded image.
 ```
@@ -29,49 +29,49 @@ from transformers import AutoModelForCausalLM, AutoProcessor
 import torch
 ```
 
-2. Translation to Arabic
+**2. Translation to Arabic**
 
 Using Groq, the English caption is translated into formal Arabic with no English words.
 ```
 from groq import Groq
 ```
 
-3. Text-to-Speech
+**3. Text-to-Speech**
 
 The translated Arabic text is converted into speech using a custom Arabic TTS module.
 ```
 from tts_arabic import tts
 ```
-4. Gradio Interface
+**4. Gradio Interface**
 
 A Gradio interface allows you to upload images and get an audio output in Arabic.
 ```
 import gradio as gr
-content_copy
 ```
+# Usage
 
-1. Run the script: The project pipeline will process the image, generate a caption, translate it into Arabic, and finally generate speech.
+1. **Run the script**: The project pipeline will process the image, generate a caption, translate it into Arabic, and finally generate speech.
 ```
 pipeline = ImageToSpeechPipeline()
 image_url = "https://cdn.pixabay.com/photo/2024/05/26/18/15/bird-6788491_1280.jpg"
 audio = pipeline.process_image_to_speech(image_url, prompt)
 ```
 
-2. Gradio Interface: Upload an image and get a speech description in Arabic.
+2. **Gradio Interface**: Upload an image and get a speech description in Arabic.
 ```
 iface.launch()
 ```
-File Structure
+## File Structure
 
-ImageCaptionGenerator: Class to handle image captioning.
+**ImageCaptionGenerator**: Class to handle image captioning.
 
-ArabianKingTranslator: Class to handle translation via Groq.
+**ArabianKingTranslator**: Class to handle translation via Groq.
 
-ArabicTextToSpeech: Class for converting Arabic text to speech.
+**ArabicTextToSpeech**: Class for converting Arabic text to speech.
 
-ImageToSpeechPipeline: Combines the full pipeline of image to Arabic speech.
+**ImageToSpeechPipeline**: Combines the full pipeline of image to Arabic speech.
 
-Gradio: Web-based interface for easy interaction.
+**Gradio**: Web-based interface for easy interaction.
 
 Example
 # Sample image and usage
