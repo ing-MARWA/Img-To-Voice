@@ -12,13 +12,11 @@ This project takes an image as input, generates a detailed caption, translates t
 ## Setup and Installation
 
 To get started, you need to install the necessary libraries:
-
+```
 pip install --upgrade gradio
 pip install groq 
 pip install git+https://github.com/nipponllo/tts_arabic.git
-content_copy
-Use code with caution.
-Markdown
+```
 How It Works
 
 1. Image Captioning
